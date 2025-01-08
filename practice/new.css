@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, monospace, Georgia, Times, 'Times New Roman', serif;
 }
 
 :root {
@@ -41,10 +41,7 @@ body {
     transition: 0.3 ;
 }
 
-img{
-    max-width: 80px;
-    
-}
+
 
 .logo {
     position: relative;
@@ -58,11 +55,14 @@ img{
 }
 
 .navbar a {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color:#1ABC9C;
     font-weight: 500;
     margin-left: 3.5rem;
     padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
 }
 
 .navbar a:hover {
@@ -87,15 +87,9 @@ section {
 
 
 .home-content {
-    max-width: 130rem; /*oki*/
-    border: 1px solid;
-    border-radius: 6%;
-    /*background-image: url('image/USAL.png');
-    background-repeat: no-repeat;
-    background-position: center;*/
-    
-
-    
+    max-width: 80rem; /*oki*/
+ /*   border: 1px solid;
+    border-radius: 2%;   */
 }
 
 
@@ -110,8 +104,9 @@ section {
 .home-content h1 {
     padding-top: 30px;
     position: relative;
-    font-size: 6.5rem; /* change here */
+    font-size: 5.5rem; /* change here */
     font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.3;
     color: var(--main-color);
     text-align: center;
@@ -121,8 +116,8 @@ section {
 
 .home-content .text-head h3 {
     /* change here */
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     color: rgb(0, 153, 255);
     background-position: -33rem 0;
     text-align: center;
@@ -138,16 +133,85 @@ section {
     text-align: justify;
     color: black;
 }
-.home-sci {
-    position: absolute;
-    bottom: 4rem;
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2 rem;
+
+.home img{
+    padding-left: 3.5rem;
+    max-width: 40%;
 }
 
-.home-sci a {
+
+
+
+.btn {
+    color: var(--main-color);
+    background-color: rgb(83, 210, 144);
+    border: none;
+    padding: 15px 30px;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    color: var(--text-color);
+    transform: scale(1.25);
+}
+
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+
+
+.social{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    gap: 3rem;
+    background-color: rgb(226, 223, 223);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.social .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+.social .content a {
+    font-size: 3em;
+}
+
+.social .content h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.social .content p{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--bg-color);
+}
+
+.social .content h3{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.social .content a {
     
     position: relative;
     display: inline-flex;
@@ -166,7 +230,7 @@ section {
 }
 
 
-.home-sci a::before {
+.social .content a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -178,9 +242,63 @@ section {
     transition: .5s;
 }
 
-.home-sci a:hover::before {
+.social .content a:hover::before {
     width: 100%;
 }
+
+.community{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 8rem;
+}
+
+.community .community-site{
+    border: 1px solid;
+    border-color: 2%;
+   height: 40rem;
+    background-color: rgb(210, 203, 203);
+    max-height: 70rem;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.community .site img{
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.community .community-site .button-container{
+    padding-top: 6rem;
+    padding-left: 15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .process {
